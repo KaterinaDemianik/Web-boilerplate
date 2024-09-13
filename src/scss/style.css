@@ -848,19 +848,26 @@ footer .container ul li a:hover {
     text-align: center;
   }
   .name {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .surname {
-    font-size: 1rem;
+    font-size: 0.7rem;
+  }
+  .country {
+    font-size: 0.4rem;
   }
   .favorite-card img,
   .nofoto {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .statistics {
+    width: 90%;
+    margin-left: 10%;
   }
   .nofoto {
     display: flex;
