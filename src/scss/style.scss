@@ -83,10 +83,12 @@ header {
     .search-box {
        display: flex; 
         align-items: center; 
-        gap: 4.6%;
+        gap: 3%;
     
         margin-left: 31.4%;
         width: 100%;
+        position: relative; 
+     
     }
    
         .inputtext{
@@ -98,10 +100,10 @@ header {
         }
 
         .inputtext:hover {
-            border-color: #f75d49; 
+            border-color: #767676; 
             background-color: $white-color; 
             color: #222222; 
-            width: 100%;
+            width: 70%;
         }
         .buttonclick {
             height: 30%;
@@ -112,6 +114,9 @@ header {
             background-color: #ffffff; 
             font-weight: bold;
             text-align: center;
+
+            
+
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
         }
@@ -521,22 +526,24 @@ tr:nth-child(even) {
 
 .favorite-cards {
 
-    margin: 0; 
-    width: 83.5%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    grid-gap: 0; 
-    justify-items: center; 
-    align-items: stretch;
+    display: flex; 
+    overflow-x: auto; 
+    white-space: nowrap;
+    gap: 0px; 
+    padding-bottom: 20px; 
 }
 
 .favorite-card {
-    padding: 0;
-    position: relative; 
+    margin-left: 8%;
+    min-width: 150px; 
+    flex-shrink: 0;
     text-align: center;
-    grid-gap: 0; 
-    margin-bottom: 15%; 
+    flex: 1; 
+    min-width: calc(100% / 5 - 80px); 
+    max-width: calc(100% / 5 - 80px); 
+}
+.favorite-cards::-webkit-scrollbar {
+    display: none;  
 }
 
 .favorite-card img {
@@ -638,8 +645,11 @@ tr:nth-child(even) {
 }
 
 .slider{
-    position: relative
+    position: relative;
+    overflow-x: auto; 
+    white-space: nowrap; 
 }
+
 
 .prev-button:hover, .next-button:hover {
     color: #191919;
@@ -699,14 +709,6 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
 .form-overlay {
     position: fixed;
     top: 0;
@@ -745,7 +747,17 @@ footer {
     cursor: pointer;
     font-size: 30px;
     font-weight: 600;
+
+
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
 }
+
+
 
 .form-container input,
 .form-container select,
