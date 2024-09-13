@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
    <head itemscope itemtype="http://schema.org/WebSite">
 
       <meta charset="utf-8">
@@ -11,12 +10,429 @@
       <title>Project</title>
 
       <link rel="stylesheet" href="./css/app.css">
+      <link rel="stylesheet" href="scss/style.css">
+
+
+       
 
    </head>
 
    <body itemscope itemtype="http://schema.org/WebPage">
 
       <script type="text/javascript" src="../build/app.js"></script>
+<div class="shadow">
+
+
+    <header>
+      <div class="container">
+          <h1 class="logo">Teachinder</h1>
+          
+          <div class="search-box">
+              <input class="inputtext" type="text" placeholder= "Name, note or age to search">
+              <button class="buttonclick">Search</button>
+          </div>
+      </div>
+  
+      <nav>
+          <div class="nav-container"> 
+              <ul>
+                  <li><a href="#teachers-section">Teachers</a></li>
+                  <li><a href="#statistics-section">Statistics</a></li>
+                  <li><a href="#favorites-section">Favorites</a></li>
+                  <li><a href="#about-section">About</a></li>
+              </ul>
+              <button class="addingteacher">Add teacher</button> 
+          </div>
+      </nav>
+      <div class="dividerlong"></div>
+   
+  </header>
+
+
+
+  <section  id="teachers-section" class="top-teachers">
+      <div class="container">
+          <h2 class="caption-top-teacher"><b>Top Teachers</b></h2>
+
+
+
+
+          <div class="filters">
+            <label for="age">Age</label>
+            <select id="age">
+                <option>18-31</option>
+                <option>32-45</option>
+                <option>45+</option>
+            </select>
+        
+            <span class="divider"></span>
+        
+            <label for="region">Region</label>
+            <select id="region" class="label_region">
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>America</option>
+            </select>
+        
+            <span class="divider"></span>
+        
+            <label for="sex">Sex</label>
+            <select id="sex" class="label_male">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        
+            <span class="divider"></span>
+        
+            <label><input type="checkbox"> Only with photo</label>
+        
+            <span class="divider"></span>
+        
+            <label><input type="checkbox"> Only favorites</label>
+        </div>
+
+        
+      </section>
       
+          <div class="teacher-cards">
+              <div class="teacher-card">
+                  <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Ihor_Tkachuk.jpg" alt="Ihor Tkachuk">
+                  <p class="name">Ihor</p>
+                 <p class="surname">Tkachuk </p>
+                  <p class="subject">Chemistry</p>
+                  <p class="country">Ukraine</p>
+              </div>
+              <div class="teacher-card">
+                  <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Pragg_Rameshbabu.jpg" alt="Pragg Rameshbabu">
+                  <p class="name">Pragg</p>
+                  <p class="surname">Rameshbabu</p>
+                  <p class="subject">Chess</p>
+                  <p class="country">India</p>
+              </div>
+              <div class="teacher-card">
+                  <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Floor_Jansen.jpg" alt="Floor Jansen">
+                  <div class="star">★</div>
+                  <p class="name">Floor</p>
+                  <p class="surname">Jansen</p>
+                  <p class="subject">Vocal</p>
+                  <p class="country">Denmark</p>
+              </div>
+              <div class="teacher-card">
+                  <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/John_Burke.jpg" alt="John Burke">
+                  <p class="name">John</p>
+                  <p class="surname">Burke</p>
+                  <p class="subject">Computer Science</p>
+                  <p class="country">Belgium</p>
+              </div>
+              <div class="teacher-card">
+               <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Ari_Tang.jpg" alt="Ari Tang">
+               <div class="star">★</div> 
+               <p class="name">Ari</p>
+               <p class="surname">Tang</p>
+               <p class="subject">Biology</p>
+               <p class="country">China</p>
+           </div>
+           <div class="teacher-card">
+            <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Rachel_Andrew.jpg" alt="Rachel Andrew">
+            <p class="name">Rachel</p>
+            <p class="surname">Andrew</p>
+            <p class="subject">Medicine</p>
+            <p class="country">UK</p>
+         </div>
+            
+
+
+         <div class="teacher-card">
+            <div class="nofoto">A.M.</div> 
+            <p class="name">Anna</p>
+            <p class="surname">Muzychuk</p>
+            <p class="subject">Chess</p>
+            <p class="country">Belarus</p>
+        </div>
+
+        <div class="teacher-card">
+         <div class="nofoto">R.L.</div> 
+         <p class="name">Radoslaw</p>
+         <p class="surname">Ljuboevic</p>
+         <p class="subject">Physics</p>
+         <p class="country">Poland</p>
+     </div>
+
+          </div>
+     
+      <div class="dividerlong"></div>
+ 
+  <section id="statistics-section" class="statistics" >
+      <div class="container">
+          <h2 class="statisticscaption">Statistics</h2>
+          <table>
+              <thead>
+
+               <colgroup>
+                  <col style="width: 24%;">
+                  <col style="width: 15%;">
+                  <col style="width: 15%;">
+                  <col style="width: 15%;">
+                  <col style="width: 20%;">
+                </colgroup>
+
+                  <tr>
+                      <th>Name</th>
+                      <th>Speciality</th>
+                      <th>Age</th>
+                      <th>Gender</th>
+                      <th>Nationality</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Daisy Alexander</td>
+                      <td>Chemistry</td>
+                      <td>28</td>
+                      <td>Female</td>
+                      <td>Vietnam</td>
+                  </tr>
+                  <tr>
+                      <td>Julia Bradley</td>
+                      <td>Math</td>
+                      <td>26</td>
+                      <td>Female</td>
+                      <td>USA</td>
+                  </tr>
+
+                  <tr>
+                     <td>Rita Hart</td>
+                     <td>Art</td>
+                     <td>41</td>
+                     <td>Female</td>
+                     <td>Ireland</td>
+                 </tr>
+                 <tr>
+                     <td>Jonathan Jacobs</td>
+                     <td>Math</td>
+                     <td>32</td>
+                     <td>Male</td>
+                     <td>England</td>
+                 </tr>
+                 <tr>
+                     <td>Nathaniel White</td>
+                     <td>Computer Science</td>
+                     <td>37</td>
+                     <td>Male</td>
+                     <td>Austria</td>
+                 </tr>
+                 <tr>
+                     <td>Frank Medina</td>
+                     <td>English</td>
+                     <td>43</td>
+                     <td>Male</td>
+                     <td>Italy</td>
+                 </tr>
+                 <tr>
+                     <td>Ella Curtis</td>
+                     <td>Chess</td>
+                     <td>34</td>
+                     <td>Female</td>
+                     <td>USA</td>
+                 </tr>
+                 <tr>
+                     <td>Claire Simmmons</td>
+                     <td>Art</td>
+                     <td>38</td>
+                     <td>Female</td>
+                     <td>Netherlands</td>
+                 </tr>
+                 <tr>
+                     <td>Benjamin Knight</td>
+                     <td>Biology</td>
+                     <td>44</td>
+                     <td>Male</td>
+                     <td>Scotland</td>
+                 </tr>
+                 <tr>
+                     <td>Norma Rose</td>
+                     <td>Statistics</td>
+                     <td>36</td>
+                     <td>Female</td>
+                     <td>France</td>
+                 </tr>
+
+              </tbody>
+          </table>
+      <div class="navigation_for_page">
+          <div class="pagination">
+            <span class="page-link active" onclick="changePage(1)">1</span>
+            <span class="page-link" onclick="changePage(2)">2</span>
+            <span class="page-link" onclick="changePage(3)">3</span>
+            <span class="page-dots">...</span>
+            <span class="page-link" onclick="changePage(lastPage)">Last</span>
+        </div>
+      </div>
+         </div>
+         <div class="dividerlong"></div>
+     </section>
+
+ 
+
+
+
+     <section id="favorites-section" class="favorites">
+      <div class="container">
+          <h2 class="favoritescaption">Favorites</h2>
+          <div class="slider">
+            <button class="prev-button">&#10094;</button>
+              <div class="favorite-cards">
+           
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Ihor_Tkachuk.jpg" alt="Ihor Tkachuk">
+                      <p class="name">Ihor</p>
+                      <p class="surname">Tkachuk</p>
+                      <p class="country">Ukraine</p>
+                  </div>
+                  <div class="favorite-card">
+                      <div class="nofoto">A.M.</div> 
+                      <p class="name">Anna</p>
+                      <p class="surname">Makarevich</p>
+                      <p class="country">Belarus</p>
+                  </div>
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/John_Burke.jpg" alt="John Burke">
+                      <p class="name">John</p>
+                      <p class="surname">Burke</p>
+                      <p class="country">Belgium</p>
+                  </div>
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Ari_Tang.jpg" alt="Ari Tang">
+                      <p class="name">Ari</p>
+                      <p class="surname">Tang</p>
+                      <p class="country">China</p>
+                  </div>
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Floor_Jansen.jpg" alt="Floor Jansen">
+                      <p class="name">Floor</p>
+                      <p class="surname">Jansen</p>
+                      <p class="country">Denmark</p>
+                  </div>
+                 <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Floor_Jansen.jpg" alt="Floor Jansen">
+                      <p class="name">Floor</p>
+                      <p class="surname">Jansen</p>
+                      <p class="country">Denmark</p>
+                  </div>
+              </div>
+              <button class="next-button">&#10095;</button>
+          </div>
+      </div>
+  </section>
+  <div class="dividerlong"></div>
+  
+
+
+
+
+  <footer>
+      <div id="about-section" class="information-paragraph"><p class="normal-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque facere, hic impedit itaque molestiae sit tempore? Ea in mollitia natus rerum voluptates. Ea ex excepturi facere tempora. Aliquid asperiores hic impedit iusto natus quaerat ratione sit? Culpa iusto optio voluptas voluptate.
+          Enim eveniet fugit iure maiores molestiae, praesentium quia.<br></p>
+          <p class="extra-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi illum in inventore ipsum odio officiis omnis quisquam sed tempora?<br></p>
+          <p class="extra-space"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque esse expedita id iusto mollitia, odit sint ullam veritatis vero?</p>
+      </div>
+      <nav>
+         <div class="nav-container"> 
+             <ul>
+                 <li><a href="#teachers-section">Teachers</a></li>
+                 <li><a href="#statistics-section">Statistics</a></li>
+                 <li><a href="#favorites-section">Favorites</a></li>
+                 <li><a href="#about-section">About</a></li>
+             </ul>
+             <button class="addingteacher">Add teacher</button> 
+         </div>
+     </nav>
+  </footer>
+     </div>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+     if (window.location.hash) {
+       window.history.replaceState(null, null, window.location.pathname); 
+     }
+     window.scrollTo(0, 0); 
+   });
+ </script>
+ 
+<div id="popup-overlay" class="form-overlay"></div>
+<div id="add-teacher-popup" class="form-container">
+    <div class="form-header">
+        <h2 class="caption_for_header">Add Teacher</h2>
+        <span class="close-btn" onclick="closePopup()">×</span>
+    </div>
+    <form>
+        <label class="form_name" for="teacher-name">Name</label>
+        <input type="text" id="teacher-name" name="name" placeholder="Enter name" required>
+
+        <label for="teacher-speciality">Speciality</label>
+        <select id="teacher-speciality" name="speciality">
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="art">Art</option>
+        </select>
+
+        <div class="row">
+            <div class="column">
+                <label for="teacher-country">Country</label>
+                <select id="teacher-country" name="country">
+                    <option value="ukraine">Ukraine</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="teacher-city">City</label>
+                <input type="text" id="teacher-city" name="city" placeholder="Enter city">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <label for="teacher-email">Email</label>
+                <input type="email" id="teacher-email" name="email" placeholder="Enter email">
+            </div>
+            <div class="column">
+                <label for="teacher-phone">Phone</label>
+                <input type="tel" id="teacher-phone" name="phone" placeholder="Enter phone number">
+            </div>
+        </div>
+
+        <label for="teacher-birthdate">Date of birth</label>
+        <input type="date" id="teacher-birthdate" name="birthdate">
+
+        <div class="radio-group">
+            <label>Sex:</label>
+            <input type="radio" name="sex" value="male"> Male
+            <input type="radio" name="sex" value="female"> Female
+        </div>
+
+        <div class="background-color-group">
+            <label for="background-color">Background color</label>
+            <input type="color" id="background-color" name="bgcolor">
+        </div>
+
+        <label for="teacher-notes">Notes (optional)</label>
+        <textarea id="teacher-notes" name="notes"></textarea>
+
+        <button type="submit">Add</button>
+    </form>
+</div>
+<script>
+   function openPopup() {
+       document.getElementById("add-teacher-popup").style.display = "block";
+       document.getElementById("popup-overlay").style.display = "block";
+   }
+
+   function closePopup() {
+       document.getElementById("add-teacher-popup").style.display = "none";
+       document.getElementById("popup-overlay").style.display = "none";
+   }
+   document.querySelector(".addingteacher").addEventListener("click", openPopup);
+</script>
+
   </body>
 </html>
