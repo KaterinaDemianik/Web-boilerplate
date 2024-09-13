@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
    <head itemscope itemtype="http://schema.org/WebSite">
 
       <meta charset="utf-8">
@@ -273,35 +272,64 @@
          <div class="dividerlong"></div>
      </section>
 
-  <section id="favorites-section" class="favorites">
+ 
+
+
+
+     <section id="favorites-section" class="favorites">
       <div class="container">
           <h2 class="favoritescaption">Favorites</h2>
-          <div class="favorite-cards">
-              <div class="favorite-card">
-                  <img src="img/favorite1.jpg" alt="Ihor Tkachuk">
-                  <p>Ihor Tkachuk</p>
-                  <p>Ukraine</p>
+          <div class="slider">
+            <button class="prev-button">&#10094;</button>
+              <div class="favorite-cards">
+           
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Ihor_Tkachuk.jpg" alt="Ihor Tkachuk">
+                      <p class="name">Ihor</p>
+                      <p class="surname">Tkachuk</p>
+                      <p class="country">Ukraine</p>
+                  </div>
+                  <div class="favorite-card">
+                      <div class="nofoto">A.M.</div> 
+                      <p class="name">Anna</p>
+                      <p class="surname">Makarevich</p>
+                      <p class="country">Belarus</p>
+                  </div>
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/John_Burke.jpg" alt="John Burke">
+                      <p class="name">John</p>
+                      <p class="surname">Burke</p>
+                      <p class="country">Belgium</p>
+                  </div>
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Ari_Tang.jpg" alt="Ari Tang">
+                      <p class="name">Ari</p>
+                      <p class="surname">Tang</p>
+                      <p class="country">China</p>
+                  </div>
+                  <div class="favorite-card">
+                      <img src="/Users/katerina/Desktop/my_project/Web-boilerplate-1/src/images/Floor_Jansen.jpg" alt="Floor Jansen">
+                      <p class="name">Floor</p>
+                      <p class="surname">Jansen</p>
+                      <p class="country">Denmark</p>
+                  </div>
+                
               </div>
-              <div class="favorite-card">
-                  <img src="img/favorite2.jpg" alt="Anna Makarevich">
-                  <p>Anna Makarevich</p>
-                  <p>Belarus</p>
-              </div>
-              <div class="favorite-card">
-                  <img src="img/favorite3.jpg" alt="John Burke">
-                  <p>John Burke</p>
-                  <p>Belgium</p>
-              </div>
-       
+              <button class="next-button">&#10095;</button>
           </div>
       </div>
-      <div class="dividerlong"></div>
   </section>
+  <div class="dividerlong"></div>
+  
+
+
+
+
   <footer>
-      <div id="about-section" class="information-paragraph"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque facere, hic impedit itaque molestiae sit tempore? Ea in mollitia natus rerum voluptates. Ea ex excepturi facere tempora. Aliquid asperiores hic impedit iusto natus quaerat ratione sit? Culpa iusto optio voluptas voluptate.
-          Enim eveniet fugit iure maiores molestiae, praesentium quia.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi illum in inventore ipsum odio officiis omnis quisquam sed tempora?
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque esse expedita id iusto mollitia, odit sint ullam veritatis vero?</p>
+      <div id="about-section" class="information-paragraph"><p class="normal-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque facere, hic impedit itaque molestiae sit tempore? Ea in mollitia natus rerum voluptates. Ea ex excepturi facere tempora. Aliquid asperiores hic impedit iusto natus quaerat ratione sit? Culpa iusto optio voluptas voluptate.
+          Enim eveniet fugit iure maiores molestiae, praesentium quia.<br></p>
+          <p class="extra-space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi illum in inventore ipsum odio officiis omnis quisquam sed tempora?<br></p>
+          <p class="extra-space"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque esse expedita id iusto mollitia, odit sint ullam veritatis vero?</p>
       </div>
       <nav>
          <div class="nav-container"> 
@@ -326,6 +354,80 @@
    });
  </script>
  
- 
+<div id="popup-overlay" class="form-overlay"></div>
+<div id="add-teacher-popup" class="form-container">
+    <div class="form-header">
+        <h2 class="caption_for_header">Add Teacher</h2>
+        <span class="close-btn" onclick="closePopup()">×</span>
+    </div>
+    <form>
+        <label class="form_name" for="teacher-name">Name</label>
+        <input type="text" id="teacher-name" name="name" placeholder="Enter name" required>
+
+        <label for="teacher-speciality">Speciality</label>
+        <select id="teacher-speciality" name="speciality">
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="art">Art</option>
+        </select>
+
+        <div class="row">
+            <div class="column">
+                <label for="teacher-country">Country</label>
+                <select id="teacher-country" name="country">
+                    <option value="ukraine">Ukraine</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="teacher-city">City</label>
+                <input type="text" id="teacher-city" name="city" placeholder="Enter city">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <label for="teacher-email">Email</label>
+                <input type="email" id="teacher-email" name="email" placeholder="Enter email">
+            </div>
+            <div class="column">
+                <label for="teacher-phone">Phone</label>
+                <input type="tel" id="teacher-phone" name="phone" placeholder="Enter phone number">
+            </div>
+        </div>
+
+        <label for="teacher-birthdate">Date of birth</label>
+        <input type="date" id="teacher-birthdate" name="birthdate">
+
+        <div class="radio-group">
+            <label>Sex:</label>
+            <input type="radio" name="sex" value="male"> Male
+            <input type="radio" name="sex" value="female"> Female
+        </div>
+
+        <div class="background-color-group">
+            <label for="background-color">Background color</label>
+            <input type="color" id="background-color" name="bgcolor">
+        </div>
+
+        <label for="teacher-notes">Notes (optional)</label>
+        <textarea id="teacher-notes" name="notes"></textarea>
+
+        <button type="submit">Add</button>
+    </form>
+</div>
+<script>
+   function openPopup() {
+       document.getElementById("add-teacher-popup").style.display = "block";
+       document.getElementById("popup-overlay").style.display = "block";
+   }
+
+   function closePopup() {
+       document.getElementById("add-teacher-popup").style.display = "none";
+       document.getElementById("popup-overlay").style.display = "none";
+   }
+   document.querySelector(".addingteacher").addEventListener("click", openPopup);
+</script>
+
   </body>
 </html>
